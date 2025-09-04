@@ -26,7 +26,42 @@
 <body>
 
   <h2>Search Box</h2>
+  <form action="@@ -0,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Input Search Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Search Box</h2>
   <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="searchInput" placeholder="Type something..." required />
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>" method="POST">
     <input type="text" name="searchInput" placeholder="Type something..." required />
     <button type="submit">Submit</button>
   </form>
