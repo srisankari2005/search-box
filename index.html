@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Search Box</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search Bar with Formspree</title>
+  <style>
+    .search-container {
+      margin: 50px auto;
+      max-width: 400px;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-left: none;
+      background-color: #4285f4;
+      color: white;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      outline: none;
+    }
+    button:hover {
+      background-color: #357ae8;
+    }
+  </style>
 </head>
 <body>
 
-  <form action="https://formspree.io/f/movnpdbj" method="POST">
-    <input type="text" name="search" placeholder="Type your search..." required>
-    <button type="submit">Search</button>
-  </form>
+  <div class="search-container">
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="search" placeholder="Search..." required />
+      <button type="submit">Search</button>
+    </form>
+  </div>
 
 </body>
 </html>
